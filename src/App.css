@@ -1,38 +1,258 @@
-.App {
-  text-align: center;
+*{
+  padding: 0;
+  margin: 0;
 }
+#search{
+background: transparent;
+background-image: url('./components/homeComponents/img/searchlogo.png');
+color: white;
+background-size: 40px;
+background-position: right;
+background-repeat: no-repeat;
+border: 1px solid white;
+border-radius: 20px;
+width: 150%;
+padding: 10px;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.more{
+  color: #be123c;
+  font-size: 15px;
+  text-decoration: none;
+  font-weight: 600;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.header{
+  background-color:#727272;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 600px;
+  padding-bottom: 5px;
+}
+.feauturedDetails{
+  margin-top: 40px;
+  width: 40%;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.mycard{
+  margin-top: 2px;
+  margin: 1px;
+  text-decoration: none;
+}
+.genre{
+  font-size: smaller;
+  font-weight: 500;
+  padding-top: 2px;
+}
+.date{
+  font-size: 12px;
+  font-weight: 200;
+  margin: 0px;
+  padding: 0px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+#menuIcon{
+  width: 50px !important;
+  padding: 4px;
+  margin-left: 3px;
+}
+.loginLink{
+  text-decoration: none;
+  color: white;
+  margin-top: 12px;
+  font-weight: 700;
+  margin-right: 15px;
+}
+.btnColor{
+  background-color: #be123c;
+  color: white;
+  padding: 4px;
+}
+/* Detail page */
+.sidebar{
+  width: 15%;
+  height: 100vh;
+  border: 1px solid #a4a1a4;
+  border-radius: 0px 50px 50px 0px;
+
+}
+.sidespace{
+  height: 100px;
+  
+  
+}
+.detailLogo{
+  padding: 25px;
+}
+.movieBox{
+  margin-left: 6px;
+  font-weight: 500;
+}
+.homeBtn{
+  padding: 25px;
+}
+.homeBtn a{
+  text-decoration: none;
+  font-size: medium;
+  color: #2e2e2e;
+}
+.homeBtn:hover{
+  background-color: #e6c8d0;
+  border-right: 3px solid #be123c;
+}
+.homeBtn a:hover{
+  color: #be123c;
+}
+.moviesid{
+  background-color: #e6c8d0;
+  border-right: 3px solid #be123c;
+  color: #be123c;
+}
+.Hero{
+  height: 50vh;
+  background-color: #727272;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-left: 30px;
+  margin-top: 30px;
+  padding: 20px;
+  border-radius: 20px;
+  width: 80vw;
+}
+.genreCont{
+  margin: 0px 4px;
+}
+.gen2{
+  padding: 5px;
+  border: 1px solid #be123c;
+  margin:0px 3px;
+  border-radius: 15px;
+  background-color: #f7e0e5;
+  color: #be123c;
+}
+.detailBody{
+  padding: 0px 25px;
+}
+.showtime{
+  background-color: #be123c;
+  color: white;
+  margin: 2px;
+  width: 100%;
+  
+}
+.showtime:hover{
+  border: 1px solid #be123c;
+  color: #be123c;
+}
+.watchopt{
+  width: 100%;
+  background-color: #f0b4c3;
+  color: #be123c;
+  margin: 2px;
+  border: 1px solid #be123c;
+}
+.watchopt:hover{
+  border: 1px solid #be123c;
+  color: #be123c;
+}
+.largePlay{
+  position: relative;
+  top:30%;
+  left:45%;
+  color: #da90a398;
+  text-align: center;
+}
+.largePlay:hover{
+  color: #be123c;
+}
+.tab{
+  background-color: #be123c;
+  color: white;
+  border-radius: 5px;
+  padding: 10px;
+  margin-right: 4px;
+  margin-left: 0px;
+}
+.tabcont{
+  border-top: 1px solid #be123c;
+  border-bottom: 1px solid #be123c;
+  background-color: #f3d3db;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 3px;
+  width: 50%;
+}
+.myfooter{
+  margin-top: 10px;
+  border: #facfda solid 1px;
+  border-radius: 10px;
+  background-color: #facfda;
+  font-weight: 800;
+}
+.myfooter a{
+  text-decoration: none;
+  color: #be123c;
+}
+.heart{
+  position: absolute;
+  top:5px;
+  right: 15px;
+  color: #e6c8d0;
+  z-index: 5;
+}
+.liked{
+  color: #be123c;
+}
+.card-body{
+  text-decoration: none;
+}
+.spinner{
+  color: #8b8889;
+}
+@media only screen and (max-width: 600px) {
+  .rightseg{
+    margin-top: 0px;
+    padding-top: 0px;
   }
-  to {
-    transform: rotate(360deg);
+  .header{
+    background-color:#727272;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 50%;
   }
+  .feauturedDetails{
+    width: 100%;
+    color: white;
+    padding: 10px;
+  }
+  .logo{
+    width: 100px;
+  }
+  #menuIcon{
+    width: 30px !important;
+    margin-left: 2px;
+  }
+  #search{
+    background-image: url('./components/homeComponents/img/searchlogo.png');
+    background-size: 20px;
+    background-position: right;
+    background-repeat: no-repeat;
+    border: 1px solid white;
+    color: white;
+    border-radius: 20px;
+    width: 100%;
+    height: 20px;
+    padding: 10px;
+    background: transparent;
+    }
+    .loginLink{
+      text-decoration: none;
+      color: white;
+      margin-top: 2px;
+      font-weight: 600;
+      margin-right: 10px;
+    }
 }
